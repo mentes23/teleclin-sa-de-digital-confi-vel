@@ -19,7 +19,7 @@ const HeroSection = () => {
           {/* Left Column - Text Content */}
           <div className="space-y-4">
             {/* Logo */}
-            <div className="mb-4">
+            <div className="mb-4 animate-fade-in">
               <img 
                 src={heroLogo} 
                 alt="TeleClin - Saúde rápida, segura e digital" 
@@ -27,7 +27,7 @@ const HeroSection = () => {
               />
             </div>
             
-            <div className="space-y-3">
+            <div className="space-y-3 animate-fade-in" style={{ animationDelay: '0.1s' }}>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-secondary leading-tight">
                 Atendimento{" "}
                 <span className="underline decoration-4 underline-offset-8">médico online</span>
@@ -46,12 +46,12 @@ const HeroSection = () => {
               </div>
             </div>
             
-            <p className="text-base text-muted-foreground">
+            <p className="text-base text-muted-foreground animate-fade-in" style={{ animationDelay: '0.2s' }}>
               Saúde rápida, segura e digital. Receitas, atestados e orientação sem filas.
             </p>
 
             {/* Feature Icons */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 animate-fade-in" style={{ animationDelay: '0.3s' }}>
               {features.map((feature, index) => (
                 <div key={index} className="flex flex-col items-center text-center gap-2">
                   <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center">
@@ -64,7 +64,7 @@ const HeroSection = () => {
           </div>
 
           {/* Right Column - Image with Floating Card */}
-          <div className="relative">
+          <div className="relative animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <div className="rounded-2xl overflow-hidden shadow-float">
               <img 
                 src={heroImage} 
@@ -74,7 +74,7 @@ const HeroSection = () => {
             </div>
 
             {/* Floating Price Card */}
-            <Card className="absolute bottom-6 left-6 right-6 p-6 shadow-float bg-background/95 backdrop-blur-sm">
+            <Card className="absolute bottom-6 left-6 right-6 p-6 shadow-float bg-background/95 backdrop-blur-sm animate-scale-in" style={{ animationDelay: '0.6s' }}>
               <div className="flex items-center justify-between flex-wrap gap-4">
                 <div>
                   <p className="text-sm text-muted-foreground mb-1">Se consulte agora mesmo:</p>
