@@ -23,7 +23,7 @@ const HeroSection = () => {
           {/* Left Column - Text Content */}
           <div className="space-y-4">
             {/* Logo */}
-            <div className="mb-4 animate-fade-in">
+            <div className="mb-4 animate-fade-in flex justify-center">
               <img src={heroLogo} alt="TeleClin - Saúde rápida, segura e digital" className="w-full max-w-md h-auto" />
             </div>
             
@@ -35,7 +35,12 @@ const HeroSection = () => {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 animate-fade-in" style={{
             animationDelay: '0.3s'
           }}>
-              {features.map((feature, index) => {})}
+              {features.map((feature, index) => (
+                <Card key={index} className="p-3 flex flex-col items-center gap-2 hover:shadow-md transition-shadow">
+                  <feature.icon className="w-6 h-6 text-primary" />
+                  <span className="text-xs font-medium text-center">{feature.label}</span>
+                </Card>
+              ))}
             </div>
           </div>
 
