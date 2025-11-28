@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/teleclin-logo.svg";
+import { useNavigate } from "react-router-dom";
 const Header = () => {
+  const navigate = useNavigate();
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({
@@ -33,10 +35,10 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center gap-3">
-          <Button variant="ghost" className="hidden sm:inline-flex">
+          <Button variant="ghost" className="hidden sm:inline-flex" onClick={() => navigate("/login")}>
             Entrar
           </Button>
-          <Button variant="cta" size="lg">
+          <Button variant="cta" size="lg" onClick={() => navigate("/cadastro")}>
             Quero me consultar
           </Button>
         </div>
