@@ -1,9 +1,11 @@
 import { Clock, FileText, Headset, CreditCard, Users, ShieldCheck, Award, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 import heroImage from "@/assets/hero-consulta.png";
 import heroLogo from "@/assets/teleclin-hero-logo.png";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   const features = [
     { icon: Clock, label: "Médicos 24h" },
     { icon: FileText, label: "Atestados" },
@@ -96,7 +98,7 @@ const HeroSection = () => {
               <p className="text-secondary-foreground/80 text-sm mb-2">Se consulte agora mesmo:</p>
               <p className="text-5xl md:text-6xl font-bold text-primary">R$ 49,90</p>
             </div>
-            <Button variant="cta" size="lg" className="text-lg px-12 py-6 h-auto">
+            <Button variant="cta" size="lg" className="text-lg px-12 py-6 h-auto" onClick={() => navigate("/cadastro")}>
               QUERO ME CONSULTAR
             </Button>
           </div>
