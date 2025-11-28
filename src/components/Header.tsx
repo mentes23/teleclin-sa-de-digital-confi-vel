@@ -9,7 +9,7 @@ const Header = () => {
   };
   return <header className="fixed top-0 left-0 right-0 bg-background shadow-sm z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <img src={logo} alt="TeleClin" className="h-20 w-auto border-4 border-none" />
+        <img src={logo} alt="TeleClin" className="h-24 w-auto border-4 border-none" />
         
         <nav className="hidden md:flex items-center gap-8">
           <button onClick={() => scrollToSection("inicio")} className="text-foreground hover:text-primary transition-colors">
