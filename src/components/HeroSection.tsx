@@ -13,13 +13,13 @@ const HeroSection = () => {
   ];
 
   return (
-    <section id="inicio" className="pt-24 pb-16 bg-gradient-to-br from-secondary/30 to-background">
+    <section id="inicio" className="pt-20 pb-12 bg-gradient-to-br from-secondary/30 to-background">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left Column - Text Content */}
-          <div className="space-y-6">
+          <div className="space-y-4">
             {/* Logo */}
-            <div className="mb-8">
+            <div className="mb-4">
               <img 
                 src={heroLogo} 
                 alt="TeleClin - Saúde rápida, segura e digital" 
@@ -27,31 +27,31 @@ const HeroSection = () => {
               />
             </div>
             
-            <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-secondary leading-tight">
+            <div className="space-y-3">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-secondary leading-tight">
                 Atendimento{" "}
                 <span className="underline decoration-4 underline-offset-8">médico online</span>
               </h1>
               
-              <div className="flex items-center gap-3">
-                <Clock className="w-16 h-16 text-primary" strokeWidth={3} />
+              <div className="flex items-center gap-2">
+                <Clock className="w-12 h-12 text-primary" strokeWidth={3} />
                 <div>
-                  <span className="text-5xl md:text-6xl lg:text-7xl font-black text-secondary">24h</span>
-                  <p className="text-lg font-bold text-secondary uppercase">disponível!</p>
+                  <span className="text-4xl md:text-5xl lg:text-6xl font-black text-secondary">24h</span>
+                  <p className="text-base font-bold text-secondary uppercase">disponível!</p>
                 </div>
               </div>
 
-              <div className="inline-block bg-secondary text-background px-6 py-3 rounded-full">
-                <p className="text-lg md:text-xl font-bold">RÁPIDO E SEGURO</p>
+              <div className="inline-block bg-secondary text-background px-5 py-2 rounded-full">
+                <p className="text-base md:text-lg font-bold">RÁPIDO E SEGURO</p>
               </div>
             </div>
             
-            <p className="text-lg text-muted-foreground mt-6">
+            <p className="text-base text-muted-foreground">
               Saúde rápida, segura e digital. Receitas, atestados e orientação sem filas.
             </p>
 
             {/* Feature Icons */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
               {features.map((feature, index) => (
                 <div key={index} className="flex flex-col items-center text-center gap-2">
                   <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center">
