@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/teleclin-logo.png";
+import logo from "@/assets/teleclin-logo.svg";
 const Header = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
