@@ -19,20 +19,20 @@ const HeroSection = () => {
           <div className="space-y-6">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-secondary leading-tight">
-                Consultas{" "}
-                <span className="underline decoration-4 underline-offset-8">médicas</span>
+                Atendimento{" "}
+                <span className="underline decoration-4 underline-offset-8">médico online</span>
               </h1>
               
               <div className="flex items-center gap-3">
                 <Clock className="w-16 h-16 text-primary" strokeWidth={3} />
                 <div>
                   <span className="text-5xl md:text-6xl lg:text-7xl font-black text-secondary">24h</span>
-                  <p className="text-lg font-bold text-secondary uppercase">por dia!</p>
+                  <p className="text-lg font-bold text-secondary uppercase">disponível!</p>
                 </div>
               </div>
 
               <div className="inline-block bg-secondary text-background px-6 py-3 rounded-full">
-                <p className="text-lg md:text-xl font-bold">SEM SAIR DE CASA.</p>
+                <p className="text-lg md:text-xl font-bold">RÁPIDO E SEGURO</p>
               </div>
             </div>
             
