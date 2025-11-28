@@ -17,9 +17,9 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
-              Consultas médicas 24h por dia!{" "}
-              <span className="text-sky-500">SEM SAIR DE CASA.</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-secondary leading-tight">
+              Consultas <span className="underline decoration-4 underline-offset-8">médicas</span> 24h por dia!{" "}
+              <span className="text-primary block mt-2">SEM SAIR DE CASA.</span>
             </h1>
             
             <p className="text-lg text-muted-foreground">
