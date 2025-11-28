@@ -1,34 +1,24 @@
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/teleclin-logo.png";
-
 const Header = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: "smooth" });
+    element?.scrollIntoView({
+      behavior: "smooth"
+    });
   };
-
-  return (
-    <header className="fixed top-0 left-0 right-0 bg-background shadow-sm z-50">
+  return <header className="fixed top-0 left-0 right-0 bg-background shadow-sm z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <img src={logo} alt="TeleClin" className="h-16 w-auto" />
+        <img src={logo} alt="TeleClin" className="h-16 w-auto border-4 border-none" />
         
         <nav className="hidden md:flex items-center gap-8">
-          <button 
-            onClick={() => scrollToSection("inicio")}
-            className="text-foreground hover:text-primary transition-colors"
-          >
+          <button onClick={() => scrollToSection("inicio")} className="text-foreground hover:text-primary transition-colors">
             Início
           </button>
-          <button 
-            onClick={() => scrollToSection("como-funciona")}
-            className="text-foreground hover:text-primary transition-colors"
-          >
+          <button onClick={() => scrollToSection("como-funciona")} className="text-foreground hover:text-primary transition-colors">
             Como Funciona
           </button>
-          <button 
-            onClick={() => scrollToSection("beneficios")}
-            className="text-foreground hover:text-primary transition-colors"
-          >
+          <button onClick={() => scrollToSection("beneficios")} className="text-foreground hover:text-primary transition-colors">
             Benefícios
           </button>
         </nav>
@@ -42,8 +32,6 @@ const Header = () => {
           </Button>
         </div>
       </div>
-    </header>
-  );
+    </header>;
 };
-
 export default Header;
