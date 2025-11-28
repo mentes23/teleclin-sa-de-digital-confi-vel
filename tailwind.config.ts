@@ -49,8 +49,8 @@ export default {
         },
       },
       boxShadow: {
-        'card': '0 10px 30px -10px hsl(210 100% 34% / 0.1)',
-        'float': '0 20px 40px -10px hsl(210 100% 34% / 0.15)',
+        'card': '0 10px 30px -10px hsl(160 65% 55% / 0.15)',
+        'float': '0 20px 40px -10px hsl(160 65% 55% / 0.2)',
       },
       borderRadius: {
         lg: "var(--radius)",

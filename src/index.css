@@ -8,17 +8,17 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* TeleClin Medical Theme - Professional & Trustworthy */
+    /* TeleClin Medical Theme - Green & Navy Blue */
     --background: 0 0% 100%;
-    --foreground: 210 100% 34%;
+    --foreground: 199 100% 18%;
     
-    /* Deep Blue #004aad - Primary brand color */
-    --primary: 210 100% 34%;
+    /* Green #3DD598 - Primary brand color */
+    --primary: 160 65% 55%;
     --primary-foreground: 0 0% 100%;
     
-    /* Light Blue #e0f2fe - Secondary/background surfaces */
-    --secondary: 199 89% 93%;
-    --secondary-foreground: 210 100% 34%;
+    /* Navy Blue #003B5C - Secondary/accent color */
+    --secondary: 199 100% 18%;
+    --secondary-foreground: 0 0% 100%;
     
     /* Orange #ff7f00 - CTA accent */
     --accent: 30 100% 50%;
@@ -26,28 +26,28 @@ All colors MUST be HSL.
     
     /* Card & Surfaces */
     --card: 0 0% 100%;
-    --card-foreground: 210 100% 34%;
+    --card-foreground: 199 100% 18%;
     
     --popover: 0 0% 100%;
-    --popover-foreground: 210 100% 34%;
+    --popover-foreground: 199 100% 18%;
     
     /* Muted tones */
     --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted-foreground: 0 0% 45%;
     
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
     
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 210 100% 34%;
+    --ring: 160 65% 55%;
     
     --radius: 0.75rem;
     
     /* Custom design tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(199 89% 93%), hsl(0 0% 100%));
-    --shadow-card: 0 10px 30px -10px hsl(210 100% 34% / 0.1);
-    --shadow-float: 0 20px 40px -10px hsl(210 100% 34% / 0.15);
+    --hero-gradient: linear-gradient(135deg, hsl(160 65% 97%), hsl(0 0% 100%));
+    --shadow-card: 0 10px 30px -10px hsl(160 65% 55% / 0.15);
+    --shadow-float: 0 20px 40px -10px hsl(160 65% 55% / 0.2);
   }
 
   .dark {
