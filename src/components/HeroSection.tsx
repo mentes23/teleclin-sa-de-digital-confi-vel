@@ -49,7 +49,7 @@ const HeroSection = () => {
           animationDelay: '0.4s'
         }}>
             <div className="rounded-2xl overflow-hidden shadow-float">
-              <img src={heroImage} alt="Médica profissional para consulta online" className="w-full h-auto object-cover" />
+              <img src={heroImage} alt="Médica profissional para consulta online" className="w-full h-auto object-contain" />
             </div>
 
             {/* Floating Price Card */}
