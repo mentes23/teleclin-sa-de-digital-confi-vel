@@ -2,6 +2,7 @@ import { Clock, FileText, Headset, CreditCard } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import heroImage from "@/assets/hero-consulta.png";
+import heroLogo from "@/assets/teleclin-hero-logo.png";
 
 const HeroSection = () => {
   const features = [
@@ -17,6 +18,15 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <div className="space-y-6">
+            {/* Logo */}
+            <div className="mb-8">
+              <img 
+                src={heroLogo} 
+                alt="TeleClin - Saúde rápida, segura e digital" 
+                className="w-full max-w-md h-auto"
+              />
+            </div>
+            
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-secondary leading-tight">
                 Atendimento{" "}
