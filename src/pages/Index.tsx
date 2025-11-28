@@ -5,6 +5,7 @@ import Specialties from "@/components/Specialties";
 import SocialProof from "@/components/SocialProof";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
         <FAQ />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };
