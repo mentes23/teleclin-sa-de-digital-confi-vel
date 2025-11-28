@@ -33,7 +33,7 @@ const HeroSection = () => {
                   <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center">
                     <feature.icon className="w-6 h-6 text-primary" />
                   </div>
-                  <span className="text-xs font-medium text-primary">{feature.label}</span>
+                  <span className="text-xs font-medium text-secondary">{feature.label}</span>
                 </div>
               ))}
             </div>
