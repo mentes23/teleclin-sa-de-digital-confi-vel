@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import HowItWorks from "@/components/HowItWorks";
 import Specialties from "@/components/Specialties";
 import SocialProof from "@/components/SocialProof";
+import FAQ from "@/components/FAQ";
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
         <HowItWorks />
         <Specialties />
         <SocialProof />
+        <FAQ />
       </main>
     </div>
   );
