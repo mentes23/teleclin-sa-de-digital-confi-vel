@@ -17,12 +17,26 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-secondary leading-tight">
-              Consultas <span className="underline decoration-4 underline-offset-8">médicas</span> 24h por dia!{" "}
-              <span className="text-primary block mt-2">SEM SAIR DE CASA.</span>
-            </h1>
+            <div className="space-y-4">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-secondary leading-tight">
+                Consultas{" "}
+                <span className="underline decoration-4 underline-offset-8">médicas</span>
+              </h1>
+              
+              <div className="flex items-center gap-3">
+                <Clock className="w-16 h-16 text-primary" strokeWidth={3} />
+                <div>
+                  <span className="text-5xl md:text-6xl lg:text-7xl font-black text-secondary">24h</span>
+                  <p className="text-lg font-bold text-secondary uppercase">por dia!</p>
+                </div>
+              </div>
+
+              <div className="inline-block bg-secondary text-background px-6 py-3 rounded-full">
+                <p className="text-lg md:text-xl font-bold">SEM SAIR DE CASA.</p>
+              </div>
+            </div>
             
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground mt-6">
               Saúde rápida, segura e digital. Receitas, atestados e orientação sem filas.
             </p>
 
